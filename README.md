@@ -1,4 +1,9 @@
-docker-infobright
+Infobright Community Edition (ICE) Docker Container
 =================
 
-Docker Container for Infobright Databse
+Infobright is a MySQL Database Engine. See http://www.infobright.org/ for more details.
+This container was based on the [mysql container](https://registry.hub.docker.com/_/mysql/)
+
+## Usage: 
+
+    docker run --name mysql-ib -e MYSQL_ROOT_PASSWORD=<mysecretpassword> /my/fav/data/dir:/mnt/mysql_data -d infobright
