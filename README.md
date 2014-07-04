@@ -6,6 +6,6 @@ This container was based on the [mysql container](https://registry.hub.docker.co
 
 ## Usage: 
 
-    docker run --name mysql-ib -e MYSQL_ROOT_PASSWORD=<mysecretpassword> /my/fav/data/dir:/mnt/mysql_data -d infobright
+    docker run --name mysql_ib -e MYSQL_ROOT_PASSWORD=<mysecretpassword> -v /my/fav/data/dir:/mnt/mysql_data -p 5029:5029 -d meatcar/infobright
 
 See container at: https://registry.hub.docker.com/u/meatcar/infobright/
